@@ -14,7 +14,8 @@ public class AddToCartPage extends BaseClass {
 	}
 
 	public static Logger log = Logger.getLogger(AddToCartPage.class.getName());
-
+	
+    //Define Add to Cart button locator
 	@FindBy(xpath = "//input[@id='add-to-cart-button']")
 	public WebElement addToCartButtonFirst;
 
@@ -27,6 +28,7 @@ public class AddToCartPage extends BaseClass {
 	@FindBy(xpath = "//div[@id='huc-v2-order-row-messages']")
 	public WebElement confirmationMessage;
 
+	//Click on Add to Cart button
 	public void clickingOnAddToCartButton() {
 
 		if (addToCartButtonFirst.isDisplayed()) {
@@ -40,12 +42,13 @@ public class AddToCartPage extends BaseClass {
 			addToCartButtonSecond.click();
 		} else {
 
-			System.out.println("Button is not displayed");
+			log.info("Button is not displayed");
 		}
 
 		log.info("Clicking on Add to Cart button!!!");
 	}
 
+	//Verify the confirmation message is displayed in Cart page
 	public boolean isConfirmationMessageDisplayed() {
 		waitForElement(confirmationMessage);
 		Boolean IsConfirmationDisplayed = confirmationMessage.isDisplayed();

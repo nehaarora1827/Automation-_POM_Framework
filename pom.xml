@@ -46,7 +46,7 @@
 			<artifactId>extentreports</artifactId>
 			<version>3.1.5</version>
 		</dependency>
-		
+
 		<!-- Dependency for POI API -->
 		<!-- http://mvnrepository.com/artifact/org.apache.poi/poi -->
 
@@ -83,6 +83,15 @@
 			<artifactId>poi-ooxml-schemas</artifactId>
 			<version>4.1.0</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.1.0</version>
+			<scope>compile</scope>
+		</dependency>
+
 
 	</dependencies>
 </project>

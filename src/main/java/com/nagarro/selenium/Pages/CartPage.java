@@ -17,6 +17,7 @@ public class CartPage extends BaseClass {
 	}
 
 	public static Logger log = Logger.getLogger(CartPage.class.getName());
+	
 
 	@FindBy(xpath = "//*[@id='nav-tools']/a[1]/following-sibling::a[4]")
 	public WebElement cart;

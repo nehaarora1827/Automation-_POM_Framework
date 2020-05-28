@@ -47,7 +47,7 @@ public class ProductPage extends BaseClass {
 		log.info("Window is opening in new tab!!!");
 	}
 
-	//Get the product title 
+	//Getting the product title in new tab
 	public String getTheProductTitleInNewTab() {
 		String producttext = productHeader.getText();
 		System.out.println(producttext);
