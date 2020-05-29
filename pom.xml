@@ -30,7 +30,7 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>3.8.1</version>
+			<version>4.0.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
@@ -94,4 +94,5 @@
 
 
 	</dependencies>
+	
 </project>
